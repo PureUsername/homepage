@@ -11,7 +11,14 @@
         "percent": "{{value, percent}}",
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
-        "date": "{{value, date}}"
+        "date": "{{value, date}}",
+        "relativeDate": "{{value, relativeDate}}",
+        "duration": "{{value, duration}}",
+        "months": "Mo.",
+        "days": "d",
+        "hours": "h",
+        "minutes": "min",
+        "seconds": "s"
     },
     "widget": {
         "missing_type": "Fehlender Widget-Typ: {{type}}",
@@ -40,15 +47,11 @@
         "load": "Last",
         "temp": "TEMP",
         "max": "Max",
-        "uptime": "UP",
-        "months": "Mo.",
-        "days": "d",
-        "hours": "h",
-        "minutes": "min"
+        "uptime": "UP"
     },
     "unifi": {
         "users": "Benutzer",
-        "uptime": "System-Laufzeit",
+        "uptime": "Betriebszeit",
         "days": "Tage",
         "wan": "WAN",
         "lan": "LAN",
@@ -104,13 +107,20 @@
         "episodes": "Episoden",
         "songs": "Songs"
     },
+    "esphome": {
+        "offline": "Offline",
+        "offline_alt": "Offline",
+        "online": "Online",
+        "total": "Gesamt",
+        "unknown": "Unbekannt"
+    },
     "evcc": {
         "pv_power": "Erzeugung",
         "battery_soc": "Batterie",
         "grid_power": "Netz",
         "home_power": "verbauch",
         "charge_power": "Ladegerät",
-        "watt_hour": "Wh"
+        "kilowatt": "kW"
     },
     "flood": {
         "download": "Download",
@@ -122,6 +132,24 @@
         "subscriptions": "Abonnements",
         "unread": "Ungelesen"
     },
+    "fritzbox": {
+        "connectionStatus": "Status",
+        "connectionStatusUnconfigured": "Unkonfiguriert",
+        "connectionStatusConnecting": "Verbinde",
+        "connectionStatusAuthenticating": "Authentifiziere",
+        "connectionStatusPendingDisconnect": "Ausstehende Trennung",
+        "connectionStatusDisconnecting": "Trenne",
+        "connectionStatusDisconnected": "Getrennt",
+        "connectionStatusConnected": "Verbunden",
+        "uptime": "Betriebszeit",
+        "maxDown": "Max. Down",
+        "maxUp": "Max. Up",
+        "down": "Empfangen",
+        "up": "Senden",
+        "received": "Empfangen",
+        "sent": "Gesendet",
+        "externalIPAddress": "Externe IP"
+    },
     "caddy": {
         "upstreams": "Upstreams",
         "requests": "Aktuelle Anfragen",
@@ -129,7 +157,7 @@
     },
     "changedetectionio": {
         "totalObserved": "Gesamt beobachtet",
-        "diffsDetected": "Erkannte Differenzen"
+        "diffsDetected": "Erkannte Änderungen"
     },
     "channelsdvrserver": {
         "shows": "Serien",
@@ -149,10 +177,10 @@
         "activeUser": "Aktive Geräte",
         "alerts": "Warnungen",
         "connectedGateway": "Verbundene Gateways",
-        "connectedSwitches": "Verbundene Switches"
+        "connectedSwitches": "Verbundene Switche"
     },
     "nzbget": {
-        "rate": "Geschwindigkeit",
+        "rate": "Datenrate",
         "remaining": "Verbleibend",
         "downloaded": "Heruntergeladen"
     },
@@ -163,7 +191,7 @@
         "tv": "TV-Serien"
     },
     "sabnzbd": {
-        "rate": "Geschwindigkeit",
+        "rate": "Datenrate",
         "queue": "Warteschlange",
         "timeleft": "Verbleibende Zeit"
     },
@@ -197,6 +225,10 @@
         "upload": "Upload",
         "leech": "Leech",
         "seed": "Seed"
+    },
+    "develancacheui": {
+        "cachehitbytes": "Cache-Trefferbytes",
+        "cachemissbytes": "Cache-Fehlbytes"
     },
     "downloadstation": {
         "download": "Download",
@@ -249,7 +281,7 @@
         "approved": "Genehmigt",
         "available": "Verfügbar"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Gesamt",
         "connected": "Verbunden",
         "new_devices": "Neue Geräte",
@@ -273,9 +305,19 @@
         "ping": "Ping"
     },
     "portainer": {
-        "running": "Werden ausgeführt",
+        "running": "Wird ausgeführt",
         "stopped": "Gestoppt",
         "total": "Gesamt"
+    },
+    "suwayomi": {
+        "download": "Heruntergeladen",
+        "nondownload": "Nicht heruntergeladen",
+        "read": "Gelesen",
+        "unread": "Ungelesen",
+        "downloadedread": "Heruntergeladen & gelesen",
+        "downloadedunread": "Heruntergeladen & ungelesen",
+        "nondownloadedread": "Nicht heruntergeladen & gelesen",
+        "nondownloadedunread": "Nicht heruntergeladen & ungelesen"
     },
     "tailscale": {
         "address": "Adresse",
@@ -290,6 +332,19 @@
         "minutes": "{{number}}min",
         "seconds": "{{number}}s",
         "ago": "Vor {{value}}"
+    },
+    "technitium": {
+        "totalQueries": "Anfragen",
+        "totalNoError": "Erfolgreich",
+        "totalServerFailure": "Fehler",
+        "totalNxDomain": "NX-Domänen",
+        "totalRefused": "Verweigert",
+        "totalAuthoritative": "Autoritativ",
+        "totalRecursive": "Rekursiv",
+        "totalCached": "Im Cache",
+        "totalBlocked": "Blockiert",
+        "totalDropped": "Verworfen",
+        "totalClients": "Benutzer"
     },
     "tdarr": {
         "queue": "Warteschlange",
@@ -328,7 +383,7 @@
         "numberOfGrabs": "Abrufungen",
         "numberOfQueries": "Anfragen",
         "numberOfFailGrabs": "Fehlgeschlagene Abrufungen",
-        "numberOfFailQueries": "Fehlgeschlagene Abfragen"
+        "numberOfFailQueries": "Fehlgeschlagene Anfragen"
     },
     "jackett": {
         "configured": "Konfiguriert",
@@ -338,7 +393,7 @@
         "numActiveSessions": "Sitzungen",
         "numConnections": "Verbindungen",
         "dataRelayed": "Weitergeleitet",
-        "transferRate": "Geschwindigkeit"
+        "transferRate": "Datenrate"
     },
     "mastodon": {
         "user_count": "Benutzer",
@@ -358,13 +413,13 @@
         "down": "Offline"
     },
     "miniflux": {
-        "read": "Lesen",
+        "read": "Gelesen",
         "unread": "Ungelesen"
     },
     "authentik": {
         "users": "Benutzer",
-        "loginsLast24H": "Anmeldungen (24h)",
-        "failedLoginsLast24H": "fehlerhafte Anmeldungen (24h)"
+        "loginsLast24H": "Anmeldungen (24 h)",
+        "failedLoginsLast24H": "Fehlversuche (24 h)"
     },
     "proxmox": {
         "mem": "RAM",
@@ -386,7 +441,7 @@
         "days": "d",
         "hours": "h",
         "crit": "Krit",
-        "read": "Lesen",
+        "read": "Gelesen",
         "write": "Schreiben",
         "gpu": "GPU",
         "mem": "RAM",
@@ -398,7 +453,8 @@
         "search": "Suchen",
         "custom": "Benutzerdefiniert",
         "visit": "Besuchen",
-        "url": "URL"
+        "url": "URL",
+        "searchsuggestion": "Vorschlag"
     },
     "wmo": {
         "0-day": "sonnig",
@@ -471,9 +527,9 @@
     },
     "healthchecks": {
         "new": "Neu",
-        "up": "Online",
+        "up": "Senden",
         "grace": "In Karenzzeit",
-        "down": "Offline",
+        "down": "Empfangen",
         "paused": "Pausiert",
         "status": "Status",
         "last_ping": "Letzter Ping",
@@ -499,11 +555,10 @@
     "truenas": {
         "load": "Systemlast",
         "uptime": "Betriebszeit",
-        "alerts": "Warnungen",
-        "time": "{{value, number(style: unit; unitDisplay: long;)}}"
+        "alerts": "Warnungen"
     },
     "pyload": {
-        "speed": "Geschwindigkeit",
+        "speed": "Datenrate",
         "active": "Aktiv",
         "queue": "Warteschlange",
         "total": "Gesamt"
@@ -515,7 +570,15 @@
     },
     "hdhomerun": {
         "channels": "Kanäle",
-        "hd": "HD"
+        "hd": "HD",
+        "tunerCount": "Empfänger",
+        "channelNumber": "Kanal",
+        "channelNetwork": "Netzwerk",
+        "signalStrength": "Stärke",
+        "signalQuality": "Qualität",
+        "symbolQuality": "Qualität",
+        "networkRate": "Bitrate",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "Bestanden",
@@ -526,6 +589,14 @@
         "inbox": "Posteingang",
         "total": "Gesamt"
     },
+    "peanut": {
+        "battery_charge": "Akkuladung",
+        "ups_load": "USV-Auslastung",
+        "ups_status": "USV-Status",
+        "online": "Online",
+        "on_battery": "Im Akkubetrieb",
+        "low_battery": "Akkustand niedrig"
+    },
     "nextdns": {
         "wait": "Bitte warten",
         "no_devices": "Keine Daten empfangen"
@@ -534,7 +605,7 @@
         "cpuLoad": "CPU-Auslastung",
         "memoryUsed": "RAM Verbrauch",
         "uptime": "Betriebszeit",
-        "numberOfLeases": "Leasen"
+        "numberOfLeases": "Leases"
     },
     "xteve": {
         "streams_all": "Keine Übertragungen",
@@ -581,7 +652,7 @@
     },
     "proxmoxbackupserver": {
         "datastore_usage": "Datenspeicher",
-        "failed_tasks_24h": "Fehlgeschlagene Prozesse 24h",
+        "failed_tasks_24h": "Fehlgeschlagene Prozesse (24 h)",
         "cpu_usage": "CPU",
         "memory_usage": "RAM"
     },
@@ -666,6 +737,11 @@
         "targets_down": "Ziele Down",
         "targets_total": "Alle Ziele"
     },
+    "gatus": {
+        "up": "Seiten verfügbar",
+        "down": "Seiten nicht verfügbar",
+        "uptime": "Betriebszeit"
+    },
     "ghostfolio": {
         "gross_percent_today": "Heute",
         "gross_percent_1y": "Ein Jahr",
@@ -696,7 +772,7 @@
         "downloadCount": "Warteschlange",
         "downloadBytesRemaining": "Verbleibend",
         "downloadTotalBytes": "Größe",
-        "downloadSpeed": "Geschwindigkeit"
+        "downloadSpeed": "Datenrate"
     },
     "kavita": {
         "seriesCount": "Serien",
@@ -747,6 +823,14 @@
         "passed": "Bestanden",
         "failed": "Fehlgeschlagen"
     },
+    "openwrt": {
+        "uptime": "Betriebszeit",
+        "cpuLoad": "CPU-Last (5 min-Durchschnitt)",
+        "up": "Senden",
+        "down": "Empfangen",
+        "bytesTx": "Übertragen",
+        "bytesRx": "Empfangen"
+    },
     "uptimerobot": {
         "status": "Status",
         "uptime": "Betriebszeit",
@@ -765,6 +849,166 @@
         "inCinemas": "Im Kino",
         "physicalRelease": "Physische Version",
         "digitalRelease": "Digitale Version",
-        "noEventsToday": "Heute keine Ereignisse!"
+        "noEventsToday": "Heute keine Ereignisse!",
+        "noEventsFound": "Keine Termine gefunden"
+    },
+    "romm": {
+        "platforms": "Plattformen",
+        "totalRoms": "Spiele",
+        "saves": "Spielstände",
+        "states": "Speicherstände",
+        "screenshots": "Bildschirmfotos",
+        "totalfilesize": "Gesamtgröße"
+    },
+    "mailcow": {
+        "domains": "Domänen",
+        "mailboxes": "Postfächer",
+        "mails": "E-Mails",
+        "storage": "Speicher"
+    },
+    "netdata": {
+        "warnings": "Warnungen",
+        "criticals": "Kritisch"
+    },
+    "plantit": {
+        "events": "Ereignisse",
+        "plants": "Pflanzen",
+        "photos": "Fotos",
+        "species": "Spezies"
+    },
+    "gitea": {
+        "notifications": "Benachrichtigungen",
+        "issues": "Probleme",
+        "pulls": "Pull-Requests"
+    },
+    "stash": {
+        "scenes": "Szenen",
+        "scenesPlayed": "Gespielte Szenen",
+        "playCount": "Wiedergaben gesamt",
+        "playDuration": "Zeit angesehen",
+        "sceneSize": "Szenengröße",
+        "sceneDuration": "Szenendauer",
+        "images": "Bilder",
+        "imageSize": "Bildgröße",
+        "galleries": "Galerien",
+        "performers": "Darsteller",
+        "studios": "Studios",
+        "movies": "Filme",
+        "tags": "Schlagwörter",
+        "oCount": "O-Anzahl"
+    },
+    "tandoor": {
+        "users": "Benutzer",
+        "recipes": "Rezepte",
+        "keywords": "Schlagwörter"
+    },
+    "homebox": {
+        "items": "Objekte",
+        "totalWithWarranty": "Mit Garantie",
+        "locations": "Orte",
+        "labels": "Labels",
+        "users": "Benutzer",
+        "totalValue": "Gesamtwert"
+    },
+    "crowdsec": {
+        "alerts": "Warnungen",
+        "bans": "Banns"
+    },
+    "wgeasy": {
+        "connected": "Verbunden",
+        "enabled": "Aktiviert",
+        "disabled": "Deaktiviert",
+        "total": "Gesamt"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "Mit Auth",
+        "outdated": "Veraltet",
+        "banned": "Gebannt"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Download",
+        "upload": "Upload"
+    },
+    "stocks": {
+        "stocks": "Aktien",
+        "loading": "Wird geladen",
+        "open": "Offen - US-Markt",
+        "closed": "Geschlossen - US-Markt",
+        "invalidConfiguration": "Ungültige Konfiguration"
+    },
+    "frigate": {
+        "cameras": "Kameras",
+        "uptime": "Betriebszeit",
+        "version": "Version"
+    },
+    "linkwarden": {
+        "links": "Links",
+        "collections": "Sammlungen",
+        "tags": "Schlagwörter"
+    },
+    "zabbix": {
+        "unclassified": "Nicht klassifiziert",
+        "information": "Informationen",
+        "warning": "Warnung",
+        "average": "Durchschnitt",
+        "high": "Hoch",
+        "disaster": "Katastrophe"
+    },
+    "lubelogger": {
+        "vehicle": "Fahrzeug",
+        "vehicles": "Fahrzeuge",
+        "serviceRecords": "Wartungseinträge",
+        "reminders": "Erinnerungen",
+        "nextReminder": "Nächste Erinnerung",
+        "none": "Keine"
+    },
+    "vikunja": {
+        "projects": "Aktive Projekte",
+        "tasks7d": "Diese Woche fällige Aufgaben",
+        "tasksOverdue": "Überfällige Aufgaben",
+        "tasksInProgress": "Aufgaben in Arbeit"
+    },
+    "headscale": {
+        "name": "Name",
+        "address": "Adresse",
+        "last_seen": "Zuletzt gesehen",
+        "status": "Status",
+        "online": "Online",
+        "offline": "Offline"
+    },
+    "beszel": {
+        "name": "Name",
+        "systems": "Systeme",
+        "up": "Senden",
+        "down": "Empfangen",
+        "paused": "Pausiert",
+        "pending": "Ausstehend",
+        "status": "Status",
+        "updated": "Aktualisiert",
+        "cpu": "CPU",
+        "memory": "RAM",
+        "disk": "Festplatte",
+        "network": "NET"
+    },
+    "argocd": {
+        "apps": "Anwendungen",
+        "synced": "Synchronisiert",
+        "outOfSync": "Nicht mehr synchronisiert",
+        "healthy": "Fehlerfrei",
+        "degraded": "Beeinträchtigt",
+        "progressing": "Fortschritt",
+        "missing": "Fehlend",
+        "suspended": "Unterbrochen"
+    },
+    "spoolman": {
+        "loading": "Wird geladen"
+    },
+    "gitlab": {
+        "groups": "Gruppen",
+        "issues": "Probleme",
+        "merges": "Merge Requests",
+        "projects": "Projekte"
     }
 }
